@@ -1,7 +1,3 @@
-/*
- * Created on Sep 17, 2018
- *
- */
 package p2;
 
 public class TestRadio {
