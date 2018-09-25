@@ -21,84 +21,84 @@ public class TVsetTest {
 	}
 
 	@Test
-	public void atribut_jacinaTona() {
-		assertEquals("Početna jačina tona bi trebalo da bude 0, ali je "+t.volume, 0, t.volume);
+	public void attribute_volume() {
+		assertEquals("Initial value should be 0, but is "+t.volume, 0, t.volume);
 	}
 	
 	@Test
-	public void atribut_ukljucen() {
-		assertEquals("Početna vrednost atributa ukljucen bi trebalo da bude false, ali je "+t.on, false, t.on);
+	public void attribute_on() {
+		assertEquals("Initial value should be false, but is "+t.on, false, t.on);
 	}
 	
 	@Test
-	public void atribut_program() {
-		assertEquals("Početna vrednost atributa program bi trebalo da bude 1, ali je "+t.channel,1, t.channel);
+	public void attribute_channel() {
+		assertEquals("Initial value should be 1, but is "+t.channel,1, t.channel);
 	}
 	
 	@Test
-	public void metoda_pojacajTon() {
+	public void method_increaseVolume() {
 		t.volume = 5;
 		
 		t.increaseVolume();
 		
-		assertEquals("Kad je jacina tona 5 i pozove se metoda, jacina tona ne postane 6, već "+t.volume, 6, t.volume);
+		assertEquals("Volume is set to 5, and method is called, but the volume is not 6, but "+t.volume, 6, t.volume);
 	}
 	
 	@Test
-	public void metoda_smanjiTon() {
+	public void method_decreaseVolume() {
 		t.volume = 4;
 		
 		t.decreaseVolume();
 		
-		assertEquals("Kad je jacina tona 4 i pozove se metoda, jacina tona ne postane 3, već "+t.volume,3, t.volume);
+		assertEquals("Volume is set to 4, and method is called, but the volume is not 3, but "+t.volume,3, t.volume);
 	}
 	
 	@Test
-	public void metoda_iskljuciTon() {
+	public void method_turnDown() {
 		t.volume = 5;
 		
 		t.turnDown();
 		
-		assertEquals("Kad je jacina tona 5 i pozove se metoda, jacina tona ne postane 0, već "+t.volume, 0, t.volume);
+		assertEquals("Volume is set to 5, and method is called, but the volume is not 0, but  "+t.volume, 0, t.volume);
 	}
 	
 	@Test
-	public void metoda_ukljuci() {
+	public void method_turnOn() {
 		t.on = false;
 		
 		t.turnOn();
 		
-		assertEquals("Kad je ukljucen false i pozove se metoda, ukljucen ne postane true, već "+t.on, true, t.on);
+		assertEquals("The on attribute is false, and method is called, it doesnt become true, but "+t.on, true, t.on);
 	}
 	
 	@Test
-	public void metoda_iskljuci() {
+	public void method_turnOff() {
 		t.on = true;
 		
 		t.turnOff();
 		
-		assertEquals("Kad je ukljucen true i pozove se metoda, ukljucen ne postane false, već "+t.on, false, t.on);
+		assertEquals("The on attribute is true, and method is called, it doesnt become false, but "+t.on, false, t.on);
 	}
 	
 	@Test
-	public void metoda_daLiJeUkljucen() {
+	public void method_isOn() {
 		t.on = true;
 		
-		assertEquals("Kad je ukljucen true i pozove se metoda, ona ne vraća true, već "+t.on, true, t.isOn());
+		assertEquals("The on attribute is true, and method is called, it doesnt return true, but "+t.on, true, t.on);
 	}
 	
 	@Test
-	public void metoda_vratiJacinuTona() {
+	public void method_getVolume() {
 		t.volume = 12;
 		
-		assertEquals("Kad je jacinaTona 12 i pozove se metoda, ona ne vraća 12, već "+t.getVolume(), 12, t.getVolume());
+		assertEquals("Volume is set to 12, and method is called, but the method doesnt return 12, but "+t.getVolume(), 12, t.getVolume());
 	}
 	
 	@Test
-	public void metoda_promeniProgram() {
+	public void method_setChannel() {
 		t.setChannel(15);
 		
-		assertEquals("Kad se pozove metoda da podesi program na 15, ona ga podesi na "+t.channel, 15, t.channel);
+		assertEquals("When the method is called to set channel 15, it sets it to "+t.channel, 15, t.channel);
 	}
 	
 	
