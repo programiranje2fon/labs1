@@ -70,7 +70,7 @@ public class RadioTest {
 		
 		r.turnOn();
 		
-		assertEquals("The on attribute is false, and method is called, it doesnt become true", true, r.on);
+		assertEquals("The on attribute is false, and method is called, it does not become true", true, r.on);
 	}
 	
 	@Test
@@ -79,14 +79,14 @@ public class RadioTest {
 		
 		r.turnOff();
 		
-		assertEquals("The on attribute is true, and method is called, it doesnt become false", true, r.on);
+		assertEquals("The on attribute is true, and method is called, it does not become false", false, r.on);
 	}
 	
 	@Test
 	public void method_isOn() {
 		r.on = true;
 		
-		assertEquals("The on attribute is true, and method is called, it doesnt return true, but "+r.on, false, r.on);
+		assertEquals("The on attribute is true, and method is called, it does not return true, but "+r.on, true, r.isOn());
 	}
 	
 	
