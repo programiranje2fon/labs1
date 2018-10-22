@@ -1,19 +1,19 @@
-#Lab exercise 1
+# Lab exercise 1
 
 ## Problem 1 
 (to be done by the tutor in cooperation with students)
 
-Make the **TVset** class in package **p1**. This class should have: **(class, class declaration, class body, packages - basics and ideas)**
+Make the **TVset** class in package **p1**. This class should have: 
 
-1. The **volume** attribute. The initial value for the volume is 0 (the sound is assumed to be off). **(Attribute, attribute declaration, basic types)**
+1. The **volume** attribute. The initial value for the volume is 0 (the sound is assumed to be off).
 
 2. The **on** attribute. The initial value for the attribute is false (the TV is initially turned off).
 
 3. The **channel** attribute. The initial value for the channel is 1.
 
-4. The **increaseVolume** method that, when called, increases the volume by 1. **(method, method declaration, return value, method body)**
+4. The **increaseVolume** method that, when called, increases the volume by 1. 
 
-5. The **decreaseVolume** method that, when called, decreases the volume by 1. **(arithmetic operators +, -,/, ++, -)**
+5. The **decreaseVolume** method that, when called, decreases the volume by 1. 
 
 6. The **turnDown** method that, when called, turns the volume down to 0 (decreases the volume level to 0).
 
@@ -25,7 +25,7 @@ Make the **TVset** class in package **p1**. This class should have: **(class, cl
 
 10. The **getVolume** method that returns the current value of the volume attribute.
 
-11. The **setChannel** method that receives a new value for the channel as a parameter and sets the value of the channel attribute to the new value **(method parameters)**.
+11. The **setChannel** method that receives a new value for the channel as a parameter and sets the value of the channel attribute to the new value.
 
 12. The **print** method that prints on the console the current value of all attributes, along with the corresponding message.
 
