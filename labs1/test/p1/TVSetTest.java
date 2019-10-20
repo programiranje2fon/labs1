@@ -8,7 +8,7 @@ import org.junit.Test;
 
 public class TVSetTest {
 	
-	TVset t;
+	private TVset t;
 
 	@Before
 	public void setUp() throws Exception {
@@ -100,8 +100,5 @@ public class TVSetTest {
 		
 		assertEquals("When the method is called to set channel 15, it sets it to "+t.channel, 15, t.channel);
 	}
-	
-	
-	
 
 }

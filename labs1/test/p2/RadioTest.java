@@ -88,7 +88,5 @@ public class RadioTest {
 		
 		assertEquals("The on attribute is true, and method is called, it doesnt return true, but "+r.on, true, r.on);
 	}
-	
-	
 
 }
