@@ -4,7 +4,9 @@ public class TestRadio {
     
     public static void main(String[] args) {
         Radio r = new Radio();
+        
         r.print();
+        r.turnOn();
         r.setFrequency(106.7);
         r.print();
         r.isOn();
